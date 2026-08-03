@@ -1,0 +1,14 @@
+# ROS 2 generated folders
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.swp
