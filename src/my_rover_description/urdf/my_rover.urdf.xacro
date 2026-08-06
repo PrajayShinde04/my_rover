@@ -5,6 +5,7 @@
     
     <xacro:include filename="rocker.xacro"/>
     <xacro:include filename="bogie.xacro"/>
+    <xacro:include filename="properties.xacro"/>
 
   <link name="base_link">
 
@@ -25,24 +26,23 @@
   </link>
     
   <xacro:rocker
-      name="left_rocker"
-      parent="base_link"
-      xyz="0 0.25 0"/>
+    name="left_rocker"
+    parent="base_link"
+    xyz="${rocker_x} ${rocker_y} ${rocker_z}"/>
 
-  
-  <xacro:rocker
-      name="right_rocker"
-      parent="base_link"
-      xyz="0 -0.25 0"/>
-
-  <xacro:bogie
-      name="left_bogie"
-      parent="left_rocker"
-      xyz="0.25 0 -0.05"/>
+<xacro:rocker
+    name="right_rocker"
+    parent="base_link"
+    xyz="${rocker_x} ${-rocker_y} ${rocker_z}"/>
 
   <xacro:bogie
-      name="right_bogie"
-      parent="right_rocker"
-      xyz="0.25 0 -0.05"/>
+    name="left_bogie"
+    parent="left_rocker"
+    xyz="${bogie_x} ${bogie_y} ${bogie_z}"/>
+
+<xacro:bogie
+    name="right_bogie"
+    parent="right_rocker"
+    xyz="${bogie_x} ${bogie_y} ${bogie_z}"/>
 
 </robot>
