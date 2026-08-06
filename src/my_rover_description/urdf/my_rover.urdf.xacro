@@ -9,8 +9,9 @@
       <origin xyz="0 0 0" rpy="0 0 0"/>
 
       <geometry>
-        <box size="0.6 0.4 0.1"/>
-      </geometry>
+    <mesh filename="package://my_rover_description/meshes/visual/base_link.stl"
+          scale="0.001 0.001 0.001"/>
+</geometry>
 
       <material name="gray">
         <color rgba="0.7 0.7 0.7 1.0"/>
