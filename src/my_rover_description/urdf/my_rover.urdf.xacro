@@ -2,47 +2,118 @@
 
 <robot name="my_rover"
        xmlns:xacro="http://www.ros.org/wiki/xacro">
-    
-    <xacro:include filename="rocker.xacro"/>
-    <xacro:include filename="bogie.xacro"/>
-    <xacro:include filename="properties.xacro"/>
 
-  <link name="base_link">
+    <!-- Includes -->
+    <xacro:include filename="$(find my_rover_description)/urdf/links/base_link.xacro"/>
+    <xacro:include filename="$(find my_rover_description)/urdf/links/rocker.xacro"/>
+    <xacro:include filename="$(find my_rover_description)/urdf/links/bogie.xacro"/>
+    <xacro:include filename="$(find my_rover_description)/urdf/links/wheel.xacro"/>
+    <xacro:include filename="$(find my_rover_description)/urdf/properties.xacro"/>
 
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
 
-      <geometry>
-    <mesh filename="package://my_rover_description/meshes/visual/base_link.stl"
-          scale="0.001 0.001 0.001"/>
-</geometry>
+    <!-- Base -->
+    <xacro:base_link/>
 
-      <material name="gray">
-        <color rgba="0.7 0.7 0.7 1.0"/>
-      </material>
 
-    </visual>
+    <!-- ================================================= -->
+    <!-- ROCKERS                                             -->
+    <!-- ================================================= -->
 
-  </link>
-    
-  <xacro:rocker
-    name="left_rocker"
-    parent="base_link"
-    xyz="${rocker_x} ${rocker_y} ${rocker_z}"/>
+    <xacro:rocker
+        name="left_rocker"
+        parent="base_link"
+        xyz="-0.1037985 0.1413 0.02"
+        rpy="1.5708 0 0"/>
 
-<xacro:rocker
-    name="right_rocker"
-    parent="base_link"
-    xyz="${rocker_x} ${-rocker_y} ${rocker_z}"/>
+    <xacro:rocker
+        name="right_rocker"
+        parent="base_link"
+        xyz="-0.1037985 -0.1413 0.02"
+        rpy="1.5708 0 0"/>
 
-  <xacro:bogie
+
+    <!-- ================================================= -->
+    <!-- BOGIES                                              -->
+    <!-- ================================================= -->
+
+   <xacro:bogie
     name="left_bogie"
     parent="left_rocker"
-    xyz="${bogie_x} ${bogie_y} ${bogie_z}"/>
+    xyz="0.26214225 -0.20  -0.10"
+    rpy="3.14159 0 0"/>
 
-<xacro:bogie
+   <xacro:bogie
     name="right_bogie"
     parent="right_rocker"
-    xyz="${bogie_x} ${bogie_y} ${bogie_z}"/>
+    xyz="0.26214225 -0.20 -0.08"
+    rpy="-3.14159 0 0"/>
+
+ 
+    <!-- ================================================= -->
+    <!-- rear left                                 -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="left_rear_wheel"
+        parent="left_rocker"
+        xyz="-0.25707953 -0.22712987 0"
+        rpy="0 0 0"/>
+
+
+    <!-- ================================================= -->
+    <!-- rear right                                   -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="right_rear_wheel"
+        parent="right_rocker"
+        xyz="-0.25707953 -0.22712987 0"
+        rpy="0 0 0"/>
+
+
+<!-- ================================================= -->
+    <!-- RIGHT REAR                                         -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="right_middle_wheel"
+        parent="right_bogie"
+        xyz="-0.195206085 0.025 -0.100411217"
+        rpy="0 0 0"/>
+    <!-- ================================================= -->
+    <!-- LEFT REAR                                          -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="left_middle_wheel"
+        parent="left_bogie"
+        xyz="-0.195206085 0.025 -0.100411217"
+        rpy="0 0 0"/>
+
+    <!-- ================================================= -->
+    <!-- RIGHT MIDDLE                                       -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="right_front_wheel"
+        parent="right_bogie"
+        xyz="0.157949245 0.025 -0.130411217"
+        rpy="0 0 0"/>
+
+    <!-- ================================================= -->
+    <!-- LEFT                                        -->
+    <!-- ================================================= -->
+
+    <xacro:wheel
+        name="left_front_wheel"
+        parent="left_bogie"
+        xyz="0.157949245 0.025 -0.100411217"
+        rpy="0 0 0"/>
+
+
+
+    
+
+    
 
 </robot>

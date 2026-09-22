@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rover_design">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-0.020179832727798993 6.13433318110113e-17 0.015977525476324143" rpy="0.0 0.0 0.0" />
+            <mass value="9.310917027999997" />
+            <inertia ixx="0.10576457127552587" iyy="0.33041844409683563" izz="0.4324204546324675" ixy="1.2555307425549675e-16" iyz="1.483739288153771e-17" ixz="0.001571137365250152" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="chassis-upper-part">
+        <inertial>
+            <origin xyz="0.28015882940930026 0.1413000000000001 0.01" rpy="0.0 -0.0 0.0" />
+            <mass value="7.495179999999997" />
+            <inertia ixx="0.0826050205436665" iyy="0.2689295125124483" izz="0.3510348543894482" ixy="3.6168040502435075e-17" iyz="6.162975822039155e-33" ixz="8.673617379884035e-19" />
+        </inertial>
+        <visual name="chassis-upper-part_visual">
+            <origin xyz="0.29350000000000004 0.1413 0.0" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/chassis-upper-part.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="chassis-upper-part_collision">
+            <origin xyz="0.29350000000000004 0.1413 0.0" rpy="0.0 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/chassis-upper-part.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rocker-bogie-R_rocker-link">
+        <inertial>
+            <origin xyz="-0.040397254782866016 -0.08032869227258967 0.010000000000000002" rpy="0.0 0.0 0.0" />
+            <mass value="2.284844437127401" />
+            <inertia ixx="0.010865956621585498" iyy="0.06708516759397543" izz="0.07779880125307026" ixy="-0.013180993446849481" iyz="1.1522598243821082e-17" ixz="-1.2701770023277597e-17" />
+        </inertial>
+        <visual name="rocker-bogie-R_rocker-link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-R_rocker-link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rocker-bogie-R_rocker-link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-R_rocker-link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rocker-bogie-R_bogie">
+        <inertial>
+            <origin xyz="-0.020622425928627452 -0.03617397235568856 -0.09041121676626228" rpy="0.0 0.0 0.0" />
+            <mass value="1.7494588983667054" />
+            <inertia ixx="0.0027534717804587362" iyy="0.030789481894890357" izz="0.03342632308212458" ixy="-7.962312379821606e-06" iyz="2.494656898269754e-19" ixz="-1.0934611678465437e-17" />
+        </inertial>
+        <visual name="rocker-bogie-R_bogie_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-R_bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rocker-bogie-R_bogie_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-R_bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rocker-bogie-L_rocker-link">
+        <inertial>
+            <origin xyz="-0.0403972547828643 -0.08032869227258659 0.009999999999999995" rpy="0.0 0.0 0.0" />
+            <mass value="2.284844437127401" />
+            <inertia ixx="0.010865956621584377" iyy="0.06708516759397024" izz="0.0777988012530714" ixy="-0.013180993446848291" iyz="5.166973824044511e-18" ixz="4.234331899471677e-18" />
+        </inertial>
+        <visual name="rocker-bogie-L_rocker-link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-L_rocker-link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rocker-bogie-L_rocker-link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-L_rocker-link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="rocker-bogie-L_bogie">
+        <inertial>
+            <origin xyz="-0.020622425928627855 -0.03617397235568938 -0.09041121676626236" rpy="0.0 0.0 0.0" />
+            <mass value="1.7494588983667054" />
+            <inertia ixx="0.002753471780459157" iyy="0.030789481894892147" izz="0.03342632308212459" ixy="-7.96231237988338e-06" iyz="2.3461145281863337e-19" ixz="3.731758221889178e-18" />
+        </inertial>
+        <visual name="rocker-bogie-L_bogie_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-L_bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="rocker-bogie-L_bogie_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/rocker-bogie-L_bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918307003558e-08 2.7560149245189457e-08 -0.03007828861561829" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938837" iyy="0.000710144239929615" izz="0.0006391574951617751" ixy="1.3947306281908087e-10" iyz="-4.930550149997839e-10" ixz="-2.427953344684722e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854778927 5.142614435065816e-05 0.004714140351855754" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746664063e-05" iyy="5.4588518772086554e-05" izz="6.714046162369113e-05" ixy="-4.4382655609548864e-08" iyz="5.555611306341026e-08" ixz="-6.174845935349054e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940822 -0.0002981877331483013 -5.24093861014471e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576898e-08" iyy="7.449894821313311e-08" izz="7.229157610019057e-08" ixy="2.1135548274739784e-09" iyz="-3.120433745936971e-13" ixz="3.9210456074667853e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.394826909906461e-08 -4.77491833565391e-08 0.03999805610930742" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361879" iyy="0.012121016106380538" izz="0.01863679864190909" ixy="3.4366658893669744e-09" iyz="-4.791264306446832e-10" ixz="3.3910727291546366e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918314439912e-08 2.7560149273534895e-08 -0.030078288615618357" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938782" iyy="0.0007101442399296339" izz="0.0006391574951617593" ixy="1.3947307393215314e-10" iyz="-4.930550054873229e-10" ixz="-2.427953381281367e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854778187 5.1426144350645375e-05 0.0047141403518557575" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.5147897466631704e-05" iyy="5.458851877208859e-05" izz="6.714046162367904e-05" ixy="-4.4382655611778255e-08" iyz="5.5556113060541234e-08" ixz="-6.174845935374541e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.0825669111894083 -0.0002981877331483033 -5.240938610583134e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576911e-08" iyy="7.449894821313851e-08" izz="7.229157610029353e-08" ixy="2.113554827489508e-09" iyz="-3.1204334967074523e-13" ixz="3.921045799132288e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269075982877e-08 -4.774918333650015e-08 0.03999805610930748" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361817" iyy="0.012121016106380722" izz="0.01863679864190903" ixy="3.436665874621825e-09" iyz="-4.791264495175794e-10" ixz="3.391072683673931e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918344125e-08 2.756014926088412e-08 -0.030078288615618322" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938814" iyy="0.0007101442399296283" izz="0.0006391574951617766" ixy="1.3947307593792715e-10" iyz="-4.930550233266847e-10" ixz="-2.427953253017973e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854777807 5.142614435065405e-05 0.004714140351855767" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663633e-05" iyy="5.4588518772082136e-05" izz="6.714046162368457e-05" ixy="-4.438265560782092e-08" iyz="5.555611305984868e-08" ixz="-6.174845935399011e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940818 -0.00029818773314832004 -5.2409386117594934e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576881e-08" iyy="7.449894821324248e-08" izz="7.229157610038028e-08" ixy="2.1135548274568603e-09" iyz="-3.1204332239363735e-13" ixz="3.9210453924344643e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269107147957e-08 -4.7749183313686795e-08 0.039998056109307276" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361655" iyy="0.01212101610638034" izz="0.018636798641908696" ixy="3.436666046359449e-09" iyz="-4.791264194798904e-10" ixz="3.3910727499604996e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269091444616e-08 -4.774918331877107e-08 0.03999805610930742" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.01212102565736163" iyy="0.012121016106380444" izz="0.01863679864190898" ixy="3.43666581737595e-09" iyz="-4.791264708578327e-10" ixz="3.391072673220018e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918334135267e-08 2.7560149302026758e-08 -0.030078288615618315" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938559" iyy="0.0007101442399296339" izz="0.0006391574951617345" ixy="1.3947308206366943e-10" iyz="-4.93055003438591e-10" ixz="-2.427953216222668e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854776148 5.1426144350653845e-05 0.004714140351855756" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.51478974666345e-05" iyy="5.458851877208853e-05" izz="6.714046162367034e-05" ixy="-4.438265561171049e-08" iyz="5.5556113062924566e-08" ixz="-6.174845935411869e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940826 -0.0002981877331483041 -5.240938612195885e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941522691e-08" iyy="7.449894821318249e-08" izz="7.229157610033126e-08" ixy="2.1135548275128253e-09" iyz="-3.1204339803103256e-13" ixz="3.921045166192295e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269084879128e-08 -4.7749183347498326e-08 0.03999805610930742" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361617" iyy="0.012121016106380483" izz="0.018636798641908953" ixy="3.4366658900717132e-09" iyz="-4.791264888833142e-10" ixz="3.3910727000952395e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918312428017e-08 2.7560149257932757e-08 -0.030078288615618308" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938714" iyy="0.0007101442399296159" izz="0.0006391574951617655" ixy="1.394730762089778e-10" iyz="-4.930550065408247e-10" ixz="-2.4279533226046123e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854778067 5.142614435065669e-05 0.004714140351855754" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663071e-05" iyy="5.458851877208227e-05" izz="6.714046162368246e-05" ixy="-4.4382655609518537e-08" iyz="5.555611306065589e-08" ixz="-6.174845935376254e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940823 -0.00029818773314830183 -5.240938609877609e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576898e-08" iyy="7.449894821298655e-08" izz="7.229157610011937e-08" ixy="2.1135548274921044e-09" iyz="-3.120433597951661e-13" ixz="3.921045461461145e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.394826909972835e-08 -4.7749183347388774e-08 0.03999805610930748" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361562" iyy="0.012121016106380549" izz="0.018636798641909112" ixy="3.436665840794724e-09" iyz="-4.791264333543134e-10" ixz="3.391072700420501e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918322905753e-08 2.7560149257850363e-08 -0.030078288615618357" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938714" iyy="0.0007101442399296304" izz="0.0006391574951617766" ixy="1.3947307891948344e-10" iyz="-4.930550030715728e-10" ixz="-2.427953324501968e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854774655 5.1426144350656874e-05 0.004714140351855768" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663071e-05" iyy="5.458851877208258e-05" izz="6.714046162367764e-05" ixy="-4.438265560971504e-08" iyz="5.555611305892128e-08" ixz="-6.174845935402767e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940818 -0.0002981877331483023 -5.2409386070099104e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576898e-08" iyy="7.44989482130137e-08" izz="7.229157610017352e-08" ixy="2.113554827478553e-09" iyz="-3.1204333281685825e-13" ixz="3.92104535180587e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_link_Rigid-1" type="fixed">
+        <origin xyz="-0.29350000000000004 -0.1413 0.0613043" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link" />
+        <child link="chassis-upper-part" />
+    </joint>
+    <joint name="base_link_Revolute-2" type="revolute">
+        <origin xyz="-0.1037985 -0.1413 0.02" rpy="-3.141592653589793 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="rocker-bogie-R_rocker-link" />
+        <axis xyz="0.0 1.0 0.0" />
+        <limit lower="-0.523599" upper="0.261799" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="base_link_Revolute-3" type="revolute">
+        <origin xyz="-0.1037985 0.1413 0.02" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="base_link" />
+        <child link="rocker-bogie-L_rocker-link" />
+        <axis xyz="0.0 1.0 0.0" />
+        <limit lower="-0.261799" upper="0.523599" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="rocker-bogie-R_rocker-link_Revolute-10" type="continuous">
+        <origin xyz="-0.2570795299999886 -0.22712986999999105 -7.105427357601002e-17" rpy="1.5707963267948966 -2.530262042850215e-16 1.1102230246251087e-16" />
+        <parent link="rocker-bogie-R_rocker-link" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="1.232595164407831e-32 -1.0 6.162975822039155e-33" />
+    </joint>
+    <joint name="rocker-bogie-R_bogie_Revolute-13" type="continuous">
+        <origin xyz="0.157949245191958 0.024999996548723934 -0.10041121676626237" rpy="-1.5707963267948966 -9.592929950250682e-17 -3.1415926535897927" />
+        <parent link="rocker-bogie-R_bogie" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 0.0" />
+    </joint>
+    <joint name="rocker-bogie-R_bogie_Revolute-15" type="continuous">
+        <origin xyz="-0.19520608480804186 0.024999996548723792 -0.10041121676626233" rpy="-1.5707963267948966 -9.592929950250682e-17 -3.1415926535897927" />
+        <parent link="rocker-bogie-R_bogie" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 0.0" />
+    </joint>
+    <joint name="rocker-bogie-L_bogie_Revolute-16" type="continuous">
+        <origin xyz="-0.19520608480805096 0.024999996548714876 -0.10041121676626222" rpy="-1.5707963267948966 -1.2025366961239505e-16 -3.1415926535897434" />
+        <parent link="rocker-bogie-L_bogie" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 0.0" />
+    </joint>
+    <joint name="rocker-bogie-L_bogie_Revolute-17" type="continuous">
+        <origin xyz="0.1579492451919451 0.02499999654873257 -0.10041121676626226" rpy="-1.5707963267948966 -1.2025366961239505e-16 -3.1415926535897434" />
+        <parent link="rocker-bogie-L_bogie" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 0.0" />
+    </joint>
+    <joint name="rocker-bogie-L_rocker-link_Revolute-18" type="continuous">
+        <origin xyz="-0.2570795299999942 -0.22712986999999502 -3.552713678800501e-17" rpy="-1.5707963267948966 -1.291880103883083e-16 -5.551115123125651e-17" />
+        <parent link="rocker-bogie-L_rocker-link" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="-6.162975822039155e-33 -1.0 0.0" />
+    </joint>
+    <joint name="rocker-bogie-R_rocker-link_Revolute-1" type="revolute">
+        <origin xyz="0.26214224999998825 -0.12166024999999554 0.020000000000000052" rpy="-1.5707963267948966 -2.530262042850215e-16 1.1102230246251087e-16" />
+        <parent link="rocker-bogie-R_rocker-link" />
+        <child link="rocker-bogie-R_bogie" />
+        <axis xyz="-1.232595164407831e-32 -1.0 6.162975822039155e-33" />
+        <limit lower="-0.959931" upper="1.22173" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="rocker-bogie-L_rocker-link_Revolute-1" type="revolute">
+        <origin xyz="0.26214224999999436 -0.12166024999999757 3.552713678800501e-17" rpy="1.5707963267948966 -1.291880103883083e-16 -5.551115123125651e-17" />
+        <parent link="rocker-bogie-L_rocker-link" />
+        <child link="rocker-bogie-L_bogie" />
+        <axis xyz="6.162975822039155e-33 -1.0 0.0" />
+        <limit lower="-1.22173" upper="0.959931" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="-3.079131296601645e-09 2.1739288058597596e-09 -0.020000000000000177" rpy="-1.5707963267948966 9.46511332309063e-17 1.3697191948655498" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="-3.0791315452916023e-09 -2.173929374293948e-09 0.025000000000000144" rpy="1.5707963267948966 -3.9139981999647076e-17 -1.3697191948655498" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="3.079131332128782e-09 2.1739289479683065e-09 0.08000000000000021" rpy="1.5707963267948966 -6.689555761527727e-17 1.7718734587242437" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="-1.3520941166689228e-09 4.8862855805964504e-09 -0.01999999999999975" rpy="-1.5707963267948941 -8.346074131317922e-17 1.0919836989271523" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="-1.3520941877231962e-09 -4.886285633887155e-09 0.024999999999999717" rpy="1.570796326794899 8.346074131317824e-17 -1.091983698927152" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="1.3520941521960594e-09 4.886285562832882e-09 0.07999999999999964" rpy="1.570796326794899 8.346074131317888e-17 2.0496089546626397" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="-2.588474856679568e-10 5.605202488823124e-09 -0.019999999999999893" rpy="-1.5707963267948972 -6.482485239177081e-16 -0.8621722767953629" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="-2.588471126330205e-10 -5.605202701985945e-09 0.024999999999999786" rpy="1.570796326794896 2.7018870990074808e-15 0.8621722767953602" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="2.588474323772516e-10 5.605202417768851e-09 0.07999999999999986" rpy="1.5707963267948963 -2.1959199885366772e-15 -2.279420376794431" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="-1.8393681955330976e-09 -5.3011327594276735e-09 -0.01999999892711653" rpy="1.5707963267948968 -5.766385519746328e-17 0.5743384097993697" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="-1.8393681244788242e-09 5.301132617319126e-09 0.02499999892711646" rpy="-1.5707963267948966 -5.227051763887855e-17 -0.5743384097993691" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="-1.8393681955330976e-09 -5.301132617319126e-09 1.0728834709539116e-09" rpy="-1.5707963267948966 1.531901565850138e-18 0.5743384097993698" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="3.7138494710098335e-09 -3.4512723345869746e-09 -0.0199999989271166" rpy="1.5707963267948968 -4.930380657631315e-32 2.4492935982947035e-16" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="3.7138494710098335e-09 3.4512723345869746e-09 0.02499999892711653" rpy="-1.5707963267948966 -4.930380657631317e-32 -2.449293598294703e-16" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="3.7138494710098335e-09 -3.4512723345869746e-09 1.0728835064810482e-09" rpy="-1.5707963267948966 -4.930380657631315e-32 2.4492935982947035e-16" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="1.5151415766467835e-09 -3.4512818203324968e-09 -0.019999998927116566" rpy="1.5707963267948968 1.5777218104420205e-30 -7.417578311366949e-32" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-2" type="fixed">
+        <origin xyz="1.5151402266155856e-09 3.451282211131002e-09 0.024999998927116494" rpy="-1.5707963267948966 -1.5777218104420166e-30 7.360020017790127e-32" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="1.5151415766467835e-09 -3.4512818203324968e-09 1.0728836130624587e-09" rpy="-1.5707963267948966 1.5777218104420205e-30 -7.417578311366949e-32" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+</robot>

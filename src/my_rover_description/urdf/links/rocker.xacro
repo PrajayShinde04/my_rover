@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="rocker" params="name parent xyz rpy">
+
+    <link name="${name}">
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="2.284844437127401"/>
+
+        <inertia
+          ixx="0.010865956621585498"
+          ixy="-0.013180993446849481"
+          ixz="-1.27e-18"
+          iyy="0.06708516759397543"
+          iyz="1.15e-17"
+          izz="0.07779880125307026"/>
+      </inertial>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh
+            filename="package://my_rover_description/meshes/visual/rocker_link.stl"
+            scale="0.001 0.001 0.001"/>
+        </geometry>
+
+        <material name="blue">
+          <color rgba="0.1 0.3 1.0 1.0"/>
+        </material>
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh
+            filename="package://my_rover_description/meshes/visual/rocker_link.stl"
+            scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+
+    </link>
+
+    <joint name="${name}_joint" type="revolute">
+
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+
+      <axis xyz="0 0 1"/>
+
+      <limit
+        lower="-0.610865"
+        upper="0.610865"
+        effort="1000"
+        velocity="2.0"/>
+
+      <dynamics
+        damping="5.0"
+        friction="0.5"/>
+
+    </joint>
+
+  </xacro:macro>
+
+</robot>

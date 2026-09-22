@@ -1,0 +1,1866 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rover">
+    <link name="287-profile">
+        <inertial>
+            <origin xyz="-0.020832831325300928 0.13150000000000012 0.03697623828647928" rpy="0.0 0.0 0.0" />
+            <mass value="18.76463999999999" />
+            <inertia ixx="0.21445832345512666" iyy="0.6598464660003979" izz="0.83477180872527" ixy="6.869504964868156e-16" iyz="8.326672684688674e-17" ixz="-0.012483213617168707" />
+        </inertial>
+        <visual name="287-profile_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/287-profile.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="287-profile_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/287-profile.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423332892e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401729804e-06" iyy="6.002040536810468e-06" izz="7.921962589027348e-06" ixy="-2.6832566250563437e-09" iyz="-1.3174119039660297e-08" ixz="2.2319544381988186e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399916568e-05 -1.1880607121392829e-05 0.0006921882472802321" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.97791511688301e-07" iyy="6.991634919877171e-07" izz="1.1456269688610277e-06" ixy="9.533655737146805e-10" iyz="9.377733180918644e-10" ixz="-1.5156247323606605e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212130774e-19 0.005405253994672198 0.004949999999880335" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598487246e-10" iyy="1.2180360588923768e-10" izz="1.3750160541869236e-10" ixy="1.0587998982139979e-22" iyz="1.3102532484656877e-21" ixz="1.4491772400092734e-27" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.004949999999946587" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064677893e-10" iyy="1.3357711301404144e-10" izz="1.3750161077914037e-10" ixy="-6.797435444642552e-12" iyz="1.0819493771951286e-21" ixz="1.8925873304670548e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423329665e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401733327e-06" iyy="6.002040536810631e-06" izz="7.921962589027348e-06" ixy="-2.683256625042791e-09" iyz="-1.3174119039676682e-08" ixz="2.2319544381102507e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.045577339991704e-05 -1.1880607121388056e-05 0.00069218824728022" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116884636e-07" iyy="6.991634919877986e-07" izz="1.1456269688609701e-06" ixy="9.533655737142931e-10" iyz="9.377733181196674e-10" ixz="-1.5156247322705293e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212131005e-19 0.005405253994672203 0.004949999999880319" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598415778e-10" iyy="1.2180360589262581e-10" izz="1.3750160541890412e-10" ixy="1.0587998982139953e-22" iyz="1.4823068158767175e-21" ixz="-8.470314980770603e-22" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.004949999999946575" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064659364e-10" iyy="1.3357711301404144e-10" izz="1.3750161077935213e-10" ixy="-6.797435444589612e-12" iyz="1.270546556857219e-21" ixz="1.6940639834543282e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423329665e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401724654e-06" iyy="6.002040536809547e-06" izz="7.921962589027293e-06" ixy="-2.683256625042791e-09" iyz="-1.3174119039676682e-08" ixz="2.2319544380018305e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399916568e-05 -1.1880607121392829e-05 0.000692188247280221" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116883552e-07" iyy="6.991634919877984e-07" izz="1.1456269688609193e-06" ixy="9.533655737146805e-10" iyz="9.37773318119287e-10" ixz="-1.5156247323801423e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212130753e-19 0.005405253994672198 0.004949999999880319" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.375016159850048e-10" iyy="1.2180360588669658e-10" izz="1.3750160541869236e-10" ixy="8.714146124198227e-28" iyz="1.2705485790631424e-21" ixz="1.4491772400318825e-27" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.004949999999946575" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064659364e-10" iyy="1.335771130131944e-10" izz="1.3750161077956389e-10" ixy="-6.797435444589612e-12" iyz="1.0587883200436433e-21" ixz="1.270547509827178e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423332884e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401729804e-06" iyy="6.002040536810522e-06" izz="7.921962589027402e-06" ixy="-2.683256625069896e-09" iyz="-1.3174119039661435e-08" ixz="2.231954438198342e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399916568e-05 -1.1880607121392829e-05 0.0006921882472802321" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116882942e-07" iyy="6.991634919876358e-07" izz="1.1456269688610277e-06" ixy="9.533655737146805e-10" iyz="9.37773318092182e-10" ixz="-1.5156247323581194e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212130776e-19 0.005405253994672198 0.004949999999880336" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598489893e-10" iyy="1.2180360588881417e-10" izz="1.3750160541784533e-10" ixy="8.714146122917824e-28" iyz="1.3036358035652635e-21" ixz="1.4491772401322845e-27" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.004949999999946587" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064677893e-10" iyy="1.3357711301446496e-10" izz="1.3750161077914037e-10" ixy="-6.797435444483733e-12" iyz="1.0786406547449165e-21" ixz="1.8793524406662064e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="157.4mm-chrome-CS-rod">
+        <inertial>
+            <origin xyz="-3.552713678800501e-17 -0.05129999999999995 0.0" rpy="0.0 -2.736911063134409e-48 4.7477838728799e-66" />
+            <mass value="0.06210752746958419" />
+            <inertia ixx="0.00012847335404758057" iyy="4.968602197565409e-07" izz="0.00012847335404758003" ixy="1.757924484789546e-52" iyz="3.827671901615779e-40" ixz="7.767271578140376e-19" />
+        </inertial>
+        <visual name="157.4mm-chrome-CS-rod_visual">
+            <origin xyz="-3.552713678800501e-17 0.027400000000000008 0.0" rpy="1.5707963267948966 -0.25267651997949214 -1.1702755208075864e-16" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="157.4mm-chrome-CS-rod_collision">
+            <origin xyz="-3.552713678800501e-17 0.027400000000000008 0.0" rpy="1.5707963267948966 -0.25267651997949214 -1.1702755208075864e-16" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="157.4mm-chrome-CS-rod">
+        <inertial>
+            <origin xyz="-5.329070518200751e-17 0.05129999999999989 -2.6645352591003756e-17" rpy="0.0 -0.0 -1.4865888522292227e-78" />
+            <mass value="0.06210752746958419" />
+            <inertia ixx="0.0001284733540475795" iyy="4.968602197565411e-07" izz="0.00012847335404757992" ixy="-1.2668450796344137e-35" iyz="-1.0842021724855044e-19" ixz="7.199574569845961e-20" />
+        </inertial>
+        <visual name="157.4mm-chrome-CS-rod_visual">
+            <origin xyz="-1.7763568394002505e-17 -0.02740000000000009 -2.6645352591003756e-17" rpy="1.5707963267948966 -1.1416779392161345 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="157.4mm-chrome-CS-rod_collision">
+            <origin xyz="-1.7763568394002505e-17 -0.02740000000000009 -2.6645352591003756e-17" rpy="1.5707963267948966 -1.1416779392161345 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="-0.00020155905881958703 0.007114140351855731 0.00010515416443926284" rpy="-1.7105694144590052e-49 -0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.5134423680374276e-05" iyy="6.714046162368048e-05" izz="5.4601992558345885e-05" ixy="6.117662907681148e-07" iyz="-1.0057688817275951e-07" ixz="-9.656721063988712e-08" />
+        </inertial>
+        <visual name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="3.552713678800501e-17 0.0024000000000000067 1.3322676295501878e-17" rpy="1.5707963267948966 -0.252676519979492 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="3.552713678800501e-17 0.0024000000000000067 1.3322676295501878e-17" rpy="1.5707963267948966 -0.252676519979492 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="-4.5373837740818604e-05 0.007114140351855661 0.0002227659474422161" rpy="0.0 -0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.47189388152812e-05" iyy="6.714046162367877e-05" izz="5.501747742343854e-05" ixy="3.074353755808082e-07" iyz="-5.383838730843755e-07" ixz="-2.4065457809234296e-07" />
+        </inertial>
+        <visual name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="5.329070518200751e-17 0.002399999999999949 -3.552713678800501e-17" rpy="1.5707963267948966 -1.1416779392161345 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="5.329070518200751e-17 0.002399999999999949 -3.552713678800501e-17" rpy="1.5707963267948966 -1.1416779392161345 -3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="8mmID-Bewel">
+        <inertial>
+            <origin xyz="-6.28198396487889e-05 -0.010261446481060546 1.6230547877835732e-05" rpy="-1.7105694144590052e-49 -0.0 0.0" />
+            <mass value="0.073099097451399" />
+            <inertia ixx="5.740605961739073e-06" iyy="6.9701625082909166e-06" izz="5.706826513199965e-06" ixy="-2.636377424475224e-08" iyz="6.81157011166427e-09" ixz="-9.35893613274825e-09" />
+        </inertial>
+        <visual name="8mmID-Bewel_visual">
+            <origin xyz="-7.105427357601002e-17 -0.0050000000000137495 -5.329070518200751e-17" rpy="3.141592653589793 -0.2526765199794921 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="8mmID-Bewel_collision">
+            <origin xyz="-7.105427357601002e-17 -0.0050000000000137495 -5.329070518200751e-17" rpy="3.141592653589793 -0.2526765199794921 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423333217e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401729533e-06" iyy="6.002040536810522e-06" izz="7.921962589027348e-06" ixy="-2.6832566250563437e-09" iyz="-1.317411903966313e-08" ixz="2.231954438164461e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399916568e-05 -1.1880607121392829e-05 0.0006921882472802388" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.97791511688301e-07" iyy="6.9916349198769e-07" izz="1.1456269688610277e-06" ixy="9.533655737146805e-10" iyz="9.377733180786295e-10" ixz="-1.5156247323801423e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212130778e-19 0.005405253994672198 0.004949999999880337" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598479305e-10" iyy="1.2180360588923768e-10" izz="1.3750160541869236e-10" ixy="1.0587998982139979e-22" iyz="1.2705485790631424e-21" ixz="-2.117567876363351e-22" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.0049499999999465935" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.257281106468054e-10" iyy="1.3357711301361793e-10" izz="1.3750161077914037e-10" ixy="-6.797435444642552e-12" iyz="1.1117278792470374e-21" ixz="2.1175804570814783e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956909 7.640091423333217e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401729533e-06" iyy="6.002040536810414e-06" izz="7.921962589027293e-06" ixy="-2.683256625042791e-09" iyz="-1.3174119039676682e-08" ixz="2.231954438164461e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399916568e-05 -1.1880607121392829e-05 0.0006921882472802299" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116883281e-07" iyy="6.9916349198769e-07" izz="1.1456269688609735e-06" ixy="9.53365573701128e-10" iyz="9.377733180989583e-10" ixz="-1.5156247323801423e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212130778e-19 0.005405253994672198 0.004949999999880337" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.375016159850048e-10" iyy="1.2180360588923768e-10" izz="1.3750160541869236e-10" ixy="1.0587998982139979e-22" iyz="1.37642769746993e-21" ixz="1.4491772400254508e-27" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934074 -0.002702626997336106 0.004949999999946585" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064669952e-10" iyy="1.3357711301446496e-10" izz="1.3750161077914037e-10" ixy="-6.797435444642552e-12" iyz="1.1117278792470376e-21" ixz="2.1175804570814783e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="157.4mm-chrome-CS-rod">
+        <inertial>
+            <origin xyz="0.056099999999999976 1.1191048088221578e-15 3.1974423109204507e-16" rpy="0.0 2.736911063134409e-48 -4.7477838728799e-66" />
+            <mass value="0.06210752746958419" />
+            <inertia ixx="4.968602197567577e-07" iyy="0.00012847335404756675" izz="0.0001284733540475667" ixy="-1.3325053635852012e-51" iyz="5.4210108624275216e-20" ixz="-6.878450096290683e-23" />
+        </inertial>
+        <visual name="157.4mm-chrome-CS-rod_visual">
+            <origin xyz="0.1348 1.1191048088221578e-15 3.1974423109204507e-16" rpy="-1.5707963267948966 0.4782742050255906 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="157.4mm-chrome-CS-rod_collision">
+            <origin xyz="0.1348 1.1191048088221578e-15 3.1974423109204507e-16" rpy="-1.5707963267948966 0.4782742050255906 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="8mmID-Bewel">
+        <inertial>
+            <origin xyz="0.010261446481060386 -2.9871378773105307e-05 -5.759742761629827e-05" rpy="-8.552847072295026e-50 -0.0 0.0" />
+            <mass value="0.073099097451399" />
+            <inertia ixx="6.970162508290266e-06" iyy="5.712597612176705e-06" izz="5.734834862762116e-06" ixy="1.2536253685092518e-08" iyz="1.5786977007885454e-08" ixz="2.4172058732684116e-08" />
+        </inertial>
+        <visual name="8mmID-Bewel_visual">
+            <origin xyz="0.005000000000013589 1.0658141036401502e-15 2.1760371282653068e-16" rpy="-3.141592653589793 1.0925221217693057 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="8mmID-Bewel_collision">
+            <origin xyz="0.005000000000013589 1.0658141036401502e-15 2.1760371282653068e-16" rpy="-3.141592653589793 1.0925221217693057 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="8mmID-Bewel">
+        <inertial>
+            <origin xyz="2.6986196389628957e-05 0.010261446481060475 5.9004306133774166e-05" rpy="0.0 -0.0 0.0" />
+            <mass value="0.073099097451399" />
+            <inertia ixx="5.711082822499117e-06" iyy="6.970162508290485e-06" izz="5.736349652441658e-06" ixy="-1.1325330915266622e-08" iyz="-2.4762531362757835e-08" ixz="1.4603057817499671e-08" />
+        </inertial>
+        <visual name="8mmID-Bewel_visual">
+            <origin xyz="-1.7763568394002505e-17 0.005000000000013714 0.0" rpy="3.141592653589793 -1.1416779392161343 -6.267146745142354e-16" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="8mmID-Bewel_collision">
+            <origin xyz="-1.7763568394002505e-17 0.005000000000013714 0.0" rpy="3.141592653589793 -1.1416779392161343 -6.267146745142354e-16" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.221083557441105e-05 -0.005328813507956912 7.640091423333231e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401730117e-06" iyy="6.002040536810419e-06" izz="7.921962589027429e-06" ixy="-2.6832566250427965e-09" iyz="-1.3174119039622503e-08" ixz="2.23195443822049e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.045577339991714e-05 -1.1880607121392503e-05 0.0006921882472802211" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116883563e-07" iyy="6.991634919877993e-07" izz="1.145626968860974e-06" ixy="9.533655737142946e-10" iyz="9.377733180925648e-10" ixz="-1.515624732324369e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-3.841333556499666e-19 0.0054052539946722 0.0049499999998803635" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598458155e-10" iyy="1.2180360589008482e-10" izz="1.3750160541890459e-10" ixy="8.714146123641201e-28" iyz="1.376427697469933e-21" ixz="-4.2345205324895966e-22" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.004681087273293411 -0.0027026269973361074 0.004949999999946618" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.257281106478644e-10" iyy="1.335771130157356e-10" izz="1.3750161077914083e-10" ixy="-6.797435444642561e-12" iyz="9.529069210815122e-22" ixz="1.6941230046176126e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="8mmID-Bewel">
+        <inertial>
+            <origin xyz="-0.010261446481060208 4.159110299539748e-05 4.9799026993766484e-05" rpy="0.0 -0.0 0.0" />
+            <mass value="0.073099097451399" />
+            <inertia ixx="6.970162508289834e-06" iyy="5.720269369558634e-06" izz="5.727163105379539e-06" ixy="1.7454622086663513e-08" iyz="1.8999251907684828e-08" ixz="2.0899336057545945e-08" />
+        </inertial>
+        <visual name="8mmID-Bewel_visual">
+            <origin xyz="-0.005000000000013447 -1.0658141036401502e-16 -3.552713678800501e-17" rpy="-3.141592653589784 -0.8748088264194539 1.5707963267948903" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="8mmID-Bewel_collision">
+            <origin xyz="-0.005000000000013447 -1.0658141036401502e-16 -3.552713678800501e-17" rpy="-3.141592653589784 -0.8748088264194539 1.5707963267948903" />
+            <geometry>
+                <mesh filename="meshes/8mmID-Bewel.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_KP08">
+        <inertial>
+            <origin xyz="-1.2210835574411067e-05 -0.005328813507956928 7.640091423333278e-05" rpy="0.0 0.0 0.0" />
+            <mass value="0.028599604162548236" />
+            <inertia ixx="2.5113599401731227e-06" iyy="6.00204053681087e-06" izz="7.92196258902752e-06" ixy="-2.6832566250292626e-09" iyz="-1.3174119039691075e-08" ixz="2.2319544382186577e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_KP08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_KP08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_KP08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08">
+        <inertial>
+            <origin xyz="2.0455773399917066e-05 -1.1880607121392774e-05 0.0006921882472802559" rpy="0.0 0.0 0.0" />
+            <mass value="0.01852760275313124" />
+            <inertia ixx="6.977915116882485e-07" iyy="6.991634919876928e-07" izz="1.145626968861026e-06" ixy="9.53365573727859e-10" iyz="9.37773318102932e-10" ixz="-1.5156247324331565e-09" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-1">
+        <inertial>
+            <origin xyz="-9.903335212127296e-19 0.005405253994672218 0.00494999999988034" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031642125" />
+            <inertia ixx="1.3750161598500517e-10" iyy="1.218036058892381e-10" izz="1.3750160541826905e-10" ixy="8.714146094108298e-28" iyz="1.2704150028649328e-21" ixz="4.23517922804391e-22" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Pillow-Block-P08_Bearing-K08-2">
+        <inertial>
+            <origin xyz="-0.0046810872732934135 -0.002702626997336118 0.004949999999946597" rpy="0.0 0.0 0.0" />
+            <mass value="0.00011727864031641905" />
+            <inertia ixx="1.2572811064744098e-10" iyy="1.3357711301573597e-10" izz="1.375016107795641e-10" ixy="-6.797435444589633e-12" iyz="1.0587320273895702e-21" ixz="2.5410523110261665e-21" />
+        </inertial>
+        <visual name="Pillow-Block-P08_Bearing-K08-2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Pillow-Block-P08_Bearing-K08-2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Pillow-Block-P08_Bearing-K08-2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="157.4mm-chrome-CS-rod">
+        <inertial>
+            <origin xyz="-0.05609999999999985 3.552713678800501e-17 -4.218847493575595e-16" rpy="0.0 -0.0 -3.0814590045554514e-73" />
+            <mass value="0.06210752746958419" />
+            <inertia ixx="4.968602197565411e-07" iyy="0.00012847335404758253" izz="0.00012847335404758253" ixy="8.673617379884035e-19" iyz="-5.421010862427532e-20" ixz="-8.673617379884035e-19" />
+        </inertial>
+        <visual name="157.4mm-chrome-CS-rod_visual">
+            <origin xyz="0.022600000000000158 -5.329070518200751e-17 7.105427357601002e-17" rpy="1.5707963267949048 -0.6959875003754427 -1.570796326794903" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="157.4mm-chrome-CS-rod_collision">
+            <origin xyz="0.022600000000000158 -5.329070518200751e-17 7.105427357601002e-17" rpy="1.5707963267949048 -0.6959875003754427 -1.570796326794903" />
+            <geometry>
+                <mesh filename="meshes/157.4mm-chrome-CS-rod.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-rocker-Assembly_new-rocker">
+        <inertial>
+            <origin xyz="-0.003306301561995016 -0.04646310907181665 0.009999999999999993" rpy="0.0 0.0 0.0" />
+            <mass value="1.951715535862695" />
+            <inertia ixx="0.006994176265144694" iyy="0.04502484245306003" izz="0.05188890434914402" ixy="-0.00646802846103209" iyz="2.9072362251091075e-18" ixz="-4.96924720685519e-18" />
+        </inertial>
+        <visual name="new-rocker-Assembly_new-rocker_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_new-rocker.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-rocker-Assembly_new-rocker_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_new-rocker.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-rocker-Assembly_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377472252678e-08 0.011129630377285317 0.01901466374329246" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.00028837982910182193" iyy="0.00012606686377318967" izz="0.0002998832263828849" ixy="1.5567832925013868e-10" iyz="-2.224281594799062e-07" ixz="-3.090904784365486e-11" />
+        </inertial>
+        <visual name="new-rocker-Assembly_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-rocker-Assembly_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-rocker-Assembly_new-rocker">
+        <inertial>
+            <origin xyz="-0.003306301561995094 -0.04646310907181597 0.010000000000000018" rpy="0.0 0.0 0.0" />
+            <mass value="1.951715535862695" />
+            <inertia ixx="0.006994176265144518" iyy="0.04502484245305867" izz="0.051888904349144206" ixy="-0.006468028461031755" iyz="8.355396803275418e-18" ixz="-4.678398651939006e-18" />
+        </inertial>
+        <visual name="new-rocker-Assembly_new-rocker_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_new-rocker.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-rocker-Assembly_new-rocker_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_new-rocker.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-rocker-Assembly_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377489599913e-08 0.011129630377285222 0.019014663743292474" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.0002883798291017925" iyy="0.00012606686377319165" izz="0.0002998832263828989" ixy="1.556783427891133e-10" iyz="-2.2242815948313458e-07" ixz="-3.0909052540126214e-11" />
+        </inertial>
+        <visual name="new-rocker-Assembly_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-rocker-Assembly_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-rocker-Assembly_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_new-bogie">
+        <inertial>
+            <origin xyz="0.015193485445775704 0.04326129949734641 0.010000000000000016" rpy="0.0 0.0 0.0" />
+            <mass value="1.1336927201823825" />
+            <inertia ixx="0.0010981194200469272" iyy="0.01007026824948093" izz="0.01109280815484829" ixy="0.0004212597710833237" iyz="-7.180621057407055e-20" ixz="6.633375950327574e-19" />
+        </inertial>
+        <visual name="new-bogie_new-bogie_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_new-bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_new-bogie_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_new-bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377485263104e-08 0.011129630377285468 0.019014663743292522" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.0002883798291018118" iyy="0.00012606686377319466" izz="0.000299883226382872" ixy="1.556783309577571e-10" iyz="-2.2242815947891985e-07" ixz="-3.0909048204845514e-11" />
+        </inertial>
+        <visual name="new-bogie_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377521692297e-08 0.011129630377285444 0.019014663743292495" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.0002883798291018268" iyy="0.00012606686377320082" izz="0.00029988322638289586" ixy="1.5567833107972984e-10" iyz="-2.2242815947809664e-07" ixz="-3.090904945375554e-11" />
+        </inertial>
+        <visual name="new-bogie_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_new-bogie">
+        <inertial>
+            <origin xyz="0.015193485445775633 0.04326129949734597 0.010000000000000024" rpy="0.0 0.0 0.0" />
+            <mass value="1.1336927201823825" />
+            <inertia ixx="0.0010981194200469539" iyy="0.010070268249480738" izz="0.01109280815484832" ixy="0.00042125977108332577" iyz="-1.4021877181731238e-17" ixz="6.938695050539963e-18" />
+        </inertial>
+        <visual name="new-bogie_new-bogie_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_new-bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_new-bogie_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_new-bogie.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377520824935e-08 0.011129630377285333 0.01901466374329245" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.00028837982910181673" iyy="0.0001260668637731852" izz="0.0002998832263828989" ixy="1.5567832616016249e-10" iyz="-2.224281594679045e-07" ixz="-3.090904187119757e-11" />
+        </inertial>
+        <visual name="new-bogie_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="new-bogie_motor-mout-coupler">
+        <inertial>
+            <origin xyz="-1.0880377479625253e-08 0.011129630377285343 0.019014663743292477" rpy="0.0 0.0 0.0" />
+            <mass value="0.47356030477488703" />
+            <inertia ixx="0.0002883798291018152" iyy="0.00012606686377320125" izz="0.00029988322638288155" ixy="1.5567832937211142e-10" iyz="-2.2242815947830588e-07" ixz="-3.0909048527251417e-11" />
+        </inertial>
+        <visual name="new-bogie_motor-mout-coupler_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="new-bogie_motor-mout-coupler_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/new-bogie_motor-mout-coupler.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269062126343e-08 -4.7749183304884204e-08 0.0399980561093074" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361973" iyy="0.012121016106380467" izz="0.018636798641909078" ixy="3.436665864213484e-09" iyz="-4.791265583405278e-10" ixz="3.3910726748967898e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918293366392e-08 2.7560149282489354e-08 -0.030078288615618298" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938128" iyy="0.0007101442399296227" izz="0.0006391574951617755" ixy="1.3947307067954662e-10" iyz="-4.930550206292192e-10" ixz="-2.4279533230272866e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.0002214470685478045 5.1426144350665825e-05 0.004714140351855764" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663027e-05" iyy="5.458851877209361e-05" izz="6.714046162368447e-05" ixy="-4.4382655605649125e-08" iyz="5.555611305885757e-08" ixz="-6.174845935377862e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940811 -0.00029818773314833755 -5.240938608809108e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941414254e-08" iyy="7.4498948213323e-08" izz="7.229157610024505e-08" ixy="2.1135548274592467e-09" iyz="-3.120432719687072e-13" ixz="3.9210457741917586e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269089820942e-08 -4.7749183333613014e-08 0.03999805610930742" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361657" iyy="0.012121016106380998" izz="0.01863679864190887" ixy="3.4366658814522985e-09" iyz="-4.791264423808467e-10" ixz="3.391072724845956e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918301464325e-08 2.7560149273179035e-08 -0.030078288615618308" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938272" iyy="0.0007101442399296209" izz="0.000639157495161769" ixy="1.3947307482661993e-10" iyz="-4.93055006299934e-10" ixz="-2.427953339631728e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854778146 5.1426144350645103e-05 0.004714140351855768" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663271e-05" iyy="5.458851877209191e-05" izz="6.714046162367937e-05" ixy="-4.43826556093964e-08" iyz="5.555611306077844e-08" ixz="-6.174845935329268e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940826 -0.00029818773314832617 -5.240938609329864e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941576901e-08" iyy="7.449894821311712e-08" izz="7.22915761003424e-08" ixy="2.113554827462134e-09" iyz="-3.120433358642736e-13" ixz="3.921045577133297e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269065560059e-08 -4.774918335430332e-08 0.039998056109307525" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361926" iyy="0.012121016106380798" izz="0.018636798641909015" ixy="3.436665944010764e-09" iyz="-4.791265144093478e-10" ixz="3.3910726146281886e-09" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.352291826856545e-08 2.7560149243244236e-08 -0.030078288615618298" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938619" iyy="0.0007101442399296338" izz="0.0006391574951618033" ixy="1.3947305701859924e-10" iyz="-4.930550278505324e-10" ixz="-2.427953515397678e-10" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854777916 5.142614435064573e-05 0.004714140351855765" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.5147897466627455e-05" iyy="5.4588518772083044e-05" izz="6.714046162367755e-05" ixy="-4.438265561635223e-08" iyz="5.555611305816029e-08" ixz="-6.174845935361618e-07" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.0825669111894082 -0.00029818773314829934 -5.240938609536879e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941522684e-08" iyy="7.4498948213074e-08" izz="7.229157610022263e-08" ixy="2.113554827518445e-09" iyz="-3.1204332645013107e-13" ixz="3.921044849700585e-13" />
+        </inertial>
+        <visual name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269101765185e-08 -4.7749183298635536e-08 0.03999805610930744" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361669" iyy="0.012121016106380538" izz="0.018636798641908994" ixy="3.436665801763439e-09" iyz="-4.791264442631314e-10" ixz="3.3910727187363225e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918331202518e-08 2.7560149268198277e-08 -0.030078288615618353" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938447" iyy="0.0007101442399296061" izz="0.000639157495161777" ixy="1.39473069866395e-10" iyz="-4.930550008593442e-10" ixz="-2.4279534078850305e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854777466 5.142614435063907e-05 0.004714140351855771" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663599e-05" iyy="5.4588518772085544e-05" izz="6.714046162367772e-05" ixy="-4.438265560823766e-08" iyz="5.555611306236365e-08" ixz="-6.174845935360749e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940829 -0.00029818773314832514 -5.240938610753896e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941631124e-08" iyy="7.449894821295824e-08" izz="7.229157610009361e-08" ixy="2.1135548274733837e-09" iyz="-3.120433024486584e-13" ixz="3.9210455374867885e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269088563055e-08 -4.774918333423325e-08 0.0399980561093073" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361797" iyy="0.012121016106380646" izz="0.01863679864190887" ixy="3.4366658754891866e-09" iyz="-4.791264325653182e-10" ixz="3.39107272775513e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918306572895e-08 2.7560149276487748e-08 -0.030078288615618246" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.0007101437720938972" iyy="0.0007101442399296387" izz="0.0006391574951617532" ixy="1.394730734713672e-10" iyz="-4.930550108647382e-10" ixz="-2.4279532664277205e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.0002214470685477955 5.142614435064554e-05 0.004714140351855729" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.514789746663406e-05" iyy="5.458851877208922e-05" izz="6.714046162367877e-05" ixy="-4.438265560941334e-08" iyz="5.555611306032691e-08" ixz="-6.174845935369087e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940795 -0.0002981877331482983 -5.2409386096249704e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941549753e-08" iyy="7.449894821320484e-08" izz="7.22915761004106e-08" ixy="2.1135548274798903e-09" iyz="-3.120433314628456e-13" ixz="3.921045583077882e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_mars-wheel1">
+        <inertial>
+            <origin xyz="1.3948269094114918e-08 -4.774918337528079e-08 0.039998056109307435" rpy="0.0 0.0 0.0" />
+            <mass value="5.503700318328381" />
+            <inertia ixx="0.012121025657361756" iyy="0.012121016106380547" izz="0.01863679864190887" ixy="3.4366658590093135e-09" iyz="-4.791264027622514e-10" ixz="3.391072701139025e-09" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_mars-wheel1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_mars-wheel1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_mars-wheel1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub">
+        <inertial>
+            <origin xyz="1.3522918290558547e-08 2.756014926809995e-08 -0.030078288615618124" rpy="0.0 0.0 0.0" />
+            <mass value="0.7595269588167501" />
+            <inertia ixx="0.000710143772093828" iyy="0.0007101442399295679" izz="0.0006391574951617441" ixy="1.39473098814593e-10" iyz="-4.930550029758371e-10" ixz="-2.4279533625718056e-10" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID">
+        <inertial>
+            <origin xyz="0.00022144706854779913 5.142614435063879e-05 0.004714140351855729" rpy="0.0 0.0 0.0" />
+            <mass value="0.24441232098910098" />
+            <inertia ixx="5.5147897466626364e-05" iyy="5.458851877208285e-05" izz="6.714046162367704e-05" ixy="-4.438265561218822e-08" iyz="5.5556113063642036e-08" ixz="-6.174845935382051e-07" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1">
+        <inertial>
+            <origin xyz="0.08256691118940807 -0.00029818773314829223 -5.240938610924658e-08" rpy="0.0 0.0 0.0" />
+            <mass value="0.0029212434745732358" />
+            <inertia ixx="1.2418861941631085e-08" iyy="7.44989482132162e-08" izz="7.22915761003514e-08" ixy="2.113554827472198e-09" iyz="-3.120433638916343e-13" ixz="3.9210455522912535e-13" />
+        </inertial>
+        <visual name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="287-profile_Rigid-1" type="fixed">
+        <origin xyz="-0.1125 -0.01 0.02" rpy="0.0 -0.0 0.0" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="287-profile_Rigid-2" type="fixed">
+        <origin xyz="-0.1125 0.273 0.02" rpy="0.0 -0.0 3.141592653589793" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="287-profile_Rigid-7" type="fixed">
+        <origin xyz="-0.21050000000000002 0.1315 0.02" rpy="0.0 -0.0 1.5707963267948966" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="287-profile_Rigid-8" type="fixed">
+        <origin xyz="-0.014499999999999999 0.1315 0.02" rpy="0.0 -0.0 -1.5707963267948966" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Revolute-9" type="continuous">
+        <origin xyz="1.7763568394002505e-17 -4.440892098500626e-18 0.00795" rpy="1.5707963267948966 -1.3945083824003145e-16 -2.392189875401386e-32" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="157.4mm-chrome-CS-rod" />
+        <axis xyz="3.546978757440347e-50 -0.9999999999999999 -7.703719777548943e-34" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Revolute-10" type="continuous">
+        <origin xyz="0.0 -4.440892098500626e-18 0.007950000000000053" rpy="-1.5707963267948961 -5.417194051371418e-16 3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="157.4mm-chrome-CS-rod" />
+        <axis xyz="-4.3790577010150533e-47 1.0 4.930380657631324e-32" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-11" type="fixed">
+        <origin xyz="0.0 0.027399999999999997 0.0" rpy="3.141592653589793 2.195560136601449e-32 3.54697875744035e-50" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-12" type="fixed">
+        <origin xyz="0.0 -0.02740000000000002 0.0" rpy="-2.465190328815662e-32 -2.465190328815659e-32 4.3790577010150533e-47" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-13" type="fixed">
+        <origin xyz="0.0 -0.13 0.0" rpy="3.141592653589793 2.195560136601449e-32 3.54697875744035e-50" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="8mmID-Bewel" />
+    </joint>
+    <joint name="287-profile_Rigid-16" type="fixed">
+        <origin xyz="-0.1125 0.1005 0.02" rpy="0.0 -0.0 0.0" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="287-profile_Rigid-17" type="fixed">
+        <origin xyz="-0.0815 0.1315 0.02" rpy="0.0 -0.0 1.5707963267948966" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Revolute-18" type="continuous">
+        <origin xyz="-1.7763568394002505e-17 -8.881784197001253e-18 -0.003499999999999979" rpy="-1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="157.4mm-chrome-CS-rod" />
+        <axis xyz="0.9999999999999999 -1.3684555315672042e-48 -1.3843833381665716e-16" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-19" type="fixed">
+        <origin xyz="-0.022600000000000006 -1.7763568394002505e-17 0.0" rpy="-7.703719777548943e-34 -2.465190328815662e-32 -3.54697875744035e-50" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="8mmID-Bewel" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-20" type="fixed">
+        <origin xyz="0.0 0.13 0.0" rpy="3.141592653589793 -2.465190328815659e-32 4.3790577010150533e-47" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="8mmID-Bewel" />
+    </joint>
+    <joint name="287-profile_Rigid-21" type="fixed">
+        <origin xyz="-0.1125 0.1625 0.02" rpy="0.0 -0.0 0.0" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="287-profile_Rigid-24" type="fixed">
+        <origin xyz="-0.1435 0.1315 0.02" rpy="0.0 -0.0 -1.5707963267948966" />
+        <parent link="287-profile" />
+        <child link="Pillow-Block-P08_KP08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Revolute-25" type="continuous">
+        <origin xyz="1.7763568394002505e-17 -3.1086244689504386e-17 -0.003299999999999912" rpy="1.5707963267948966 1.5707963267948903 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="157.4mm-chrome-CS-rod" />
+        <axis xyz="1.0 -9.860761315262648e-32 -4.189941896719332e-32" />
+    </joint>
+    <joint name="157.4mm-chrome-CS-rod_Rigid-26" type="fixed">
+        <origin xyz="0.0226 0.0 0.0" rpy="-3.141592653589793 7.888609052206212e-31 -2.2420775429197073e-44" />
+        <parent link="157.4mm-chrome-CS-rod" />
+        <child link="8mmID-Bewel" />
+    </joint>
+    <joint name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-27" type="fixed">
+        <origin xyz="0.0 -0.0035999999999999943 0.0" rpy="-3.141592653589793 -1.1555579666323416e-32 2.4845869563327022e-65" />
+        <parent link="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="new-rocker-Assembly_new-rocker" />
+    </joint>
+    <joint name="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Rigid-28" type="fixed">
+        <origin xyz="0.0 -0.0035999999999999943 0.0" rpy="4.930380657631324e-32 -2.465190328815662e-32 1.2890201567131766e-66" />
+        <parent link="EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="new-rocker-Assembly_new-rocker" />
+    </joint>
+    <joint name="new-rocker-Assembly_new-rocker_Revolute-29" type="revolute">
+        <origin xyz="0.25759872655083754 -0.09633974439679184 0.020000000000000052" rpy="1.5707963267948966 -1.2129081123708506e-16 0.2526765199794915" />
+        <parent link="new-rocker-Assembly_new-rocker" />
+        <child link="new-bogie_new-bogie" />
+        <axis xyz="0.0 -1.0 1.5407439555097887e-33" />
+        <limit lower="-0.610865" upper="0.523599" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="new-rocker-Assembly_new-rocker_Revolute-30" type="revolute">
+        <origin xyz="0.257598728402777 -0.0963397447553041 7.105427357601002e-17" rpy="1.5707963267948966 3.2676740250620356e-16 0.4291183875787607" />
+        <parent link="new-rocker-Assembly_new-rocker" />
+        <child link="new-bogie_new-bogie" />
+        <axis xyz="0.0 -1.0 -6.752791867507746e-33" />
+        <limit lower="-0.610865" upper="0.523599" effort="1000000" velocity="1000000" />
+    </joint>
+    <joint name="new-bogie_motor-mout-coupler_Revolute-31" type="continuous">
+        <origin xyz="2.227338942173418e-09 2.547871531533019e-09 -2.1316282072803005e-16" rpy="-1.570796326794896 -4.487414606640273e-16 -0.5549084991091744" />
+        <parent link="new-bogie_motor-mout-coupler" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 -9.860761315262648e-32" />
+    </joint>
+    <joint name="new-bogie_motor-mout-coupler_Revolute-32" type="continuous">
+        <origin xyz="-1.895157453191132e-09 -2.6079256443267697e-09 -1.4210854715202004e-16" rpy="-1.570796326794896 7.374408266368053e-16 1.2872251806359616" />
+        <parent link="new-bogie_motor-mout-coupler" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 7.395570986446986e-32" />
+    </joint>
+    <joint name="new-rocker-Assembly_motor-mout-coupler_Revolute-33" type="continuous">
+        <origin xyz="-3.935267756105531e-09 1.6803080882255017e-09 0.0" rpy="-1.5707963267948966 4.189745356309786e-16 1.166037969048663" />
+        <parent link="new-rocker-Assembly_motor-mout-coupler" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="5.551115123125783e-17 -1.0 -1.232595164407831e-32" />
+    </joint>
+    <joint name="new-rocker-Assembly_motor-mout-coupler_Revolute-34" type="continuous">
+        <origin xyz="-4.918124716368766e-09 3.881973498209845e-10 0.037999999999999985" rpy="1.5707963267948966 -7.775625722856497e-17 0.9895961014493945" />
+        <parent link="new-rocker-Assembly_motor-mout-coupler" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -0.9999999999999999 1.232595164407831e-32" />
+    </joint>
+    <joint name="new-bogie_motor-mout-coupler_Revolute-35" type="continuous">
+        <origin xyz="-3.713781051573051e-09 -2.7234431954070714e-09 0.03799999999999998" rpy="1.5707963267948968 -1.9138334877998965e-17 1.110783313036696" />
+        <parent link="new-bogie_motor-mout-coupler" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="-5.551115123125783e-17 -0.9999999999999999 3.0814879110195774e-33" />
+    </joint>
+    <joint name="new-bogie_motor-mout-coupler_Revolute-36" type="continuous">
+        <origin xyz="-9.333853617787825e-10 -4.107091342575586e-09 0.038" rpy="1.5707963267948968 -9.600235390206162e-18 -0.7313503667084434" />
+        <parent link="new-bogie_motor-mout-coupler" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2" />
+        <axis xyz="0.0 -1.0 -2.465190328815662e-32" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.0 0.004" rpy="-1.5707963267948966 -0.0 1.659597843674264e-32" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.005956539999999993 0.00495" rpy="1.4850330447595408e-18 -1.3945083824003145e-16 -2.392189875401386e-32" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932649999999988 -0.0034252200000000066 0.0049499999999999995" rpy="3.141592653589793 1.047197551196597 -3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="0.0 -4.440892098500626e-18 0.004000000000000022" rpy="1.5707963267948966 7.395570986446986e-32 -3.141592653589793" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="0.0 0.0059565399999999885 0.00495000000000001" rpy="-3.1415926535897927 -5.417194051371418e-16 3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932650000000006 -0.003425220000000011 0.0049500000000000455" rpy="-9.860058102560646e-16 -1.0471975511965979 4.701918863176035e-16" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="0.0 0.0 0.004000000000000057" rpy="-1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="-1.7763568394002505e-17 0.005956539999999993 0.0049500000000000455" rpy="7.300045341427614e-34 -1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932650000000024 -0.0034252200000000066 0.00495000000000001" rpy="1.7147684562948224e-18 0.5235987755982996 -3.0223433549501162e-18" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.0 0.0039999999999999715" rpy="-1.5707963267948966 1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="3.552713678800501e-17 0.005956539999999993 0.004949999999999971" rpy="-7.300045341427614e-34 1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.0059326499999999525 -0.0034252200000000066 0.004949999999999971" rpy="3.141592653589793 -0.5235987755982996 3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.0 0.004000000000000022" rpy="-1.5707963267948966 -0.0 1.659597843674264e-32" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.005956539999999993 0.00495000000000001" rpy="1.4850330447595408e-18 -1.3945083824003145e-16 -2.392189875401386e-32" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932649999999988 -0.0034252200000000066 0.00495000000000001" rpy="3.141592653589793 1.047197551196597 -3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="0.0 -4.440892098500626e-18 0.004000000000000022" rpy="-1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="-1.7763568394002505e-17 0.005956539999999993 0.004950000000000019" rpy="7.300045341427614e-34 -1.5707963267948966 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932650000000024 -0.0034252200000000066 0.004950000000000019" rpy="1.7147684562948224e-18 0.5235987755982996 -3.0223433549501162e-18" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="-1.7763568394002505e-17 -3.552713678800501e-17 0.003999999999999986" rpy="1.5707963267948966 -1.2246467991473535e-16 -3.141592653589793" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="0.0 0.005956539999999943 0.004949999999999974" rpy="-3.1415926535897927 -6.641840850518825e-16 -3.141592653589793" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.005932650000000006 -0.0034252200000000465 0.00495000000000001" rpy="-9.86005810256073e-16 -1.0471975511965976 4.70191886317538e-16" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="Pillow-Block-P08_KP08_Rigid-1" type="fixed">
+        <origin xyz="0.0 -7.105427357601002e-17 0.004000000000000092" rpy="-1.5707963267948966 1.5707963267948901 0" />
+        <parent link="Pillow-Block-P08_KP08" />
+        <child link="Pillow-Block-P08_Bearing-K08" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-2" type="fixed">
+        <origin xyz="1.7763568394002505e-17 0.0059565399999999035 0.004950000000000152" rpy="5.866114174043387e-29 1.5707963267948903 0" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-1" />
+    </joint>
+    <joint name="Pillow-Block-P08_Bearing-K08_Rigid-3" type="fixed">
+        <origin xyz="-0.0059326499999999525 -0.003425220000000082 0.004950000000000081" rpy="3.141592653589786 -0.5235987755983008 -3.1415926535897896" />
+        <parent link="Pillow-Block-P08_Bearing-K08" />
+        <child link="Pillow-Block-P08_Bearing-K08-2" />
+    </joint>
+    <joint name="new-rocker-Assembly_new-rocker_Rigid-1" type="fixed">
+        <origin xyz="-0.24620473658004507 -0.18481868011158717 0.019999999999999983" rpy="4.9137763939362126e-17 -0.8338767453250019 -2.8889161336103015" />
+        <parent link="new-rocker-Assembly_new-rocker" />
+        <child link="new-rocker-Assembly_motor-mout-coupler" />
+    </joint>
+    <joint name="new-rocker-Assembly_new-rocker_Rigid-1" type="fixed">
+        <origin xyz="-0.24620473623826195 -0.1848186791647494 0.020000000000000177" rpy="2.0413378593579383e-16 -0.8338767453249994 -2.7124742660110326" />
+        <parent link="new-rocker-Assembly_new-rocker" />
+        <child link="new-rocker-Assembly_motor-mout-coupler" />
+    </joint>
+    <joint name="new-bogie_new-bogie_Rigid-1" type="fixed">
+        <origin xyz="0.17608687614247057 -0.01228788512122872 0.02000000000000001" rpy="3.141592653589793 0.5867694401069674 -2.888916133610302" />
+        <parent link="new-bogie_new-bogie" />
+        <child link="new-bogie_motor-mout-coupler" />
+    </joint>
+    <joint name="new-bogie_new-bogie_Rigid-2" type="fixed">
+        <origin xyz="-0.14056660679737296 -0.009977643012443842 0.02" rpy="-6.183253119754904e-17 -0.7126895337377018 -2.888916133610302" />
+        <parent link="new-bogie_new-bogie" />
+        <child link="new-bogie_motor-mout-coupler" />
+    </joint>
+    <joint name="new-bogie_new-bogie_Rigid-1" type="fixed">
+        <origin xyz="0.17608687132038925 -0.012287885679570714 0.01999999999999993" rpy="-3.141592653589793 0.5867694401069659 -2.7124742660110326" />
+        <parent link="new-bogie_new-bogie" />
+        <child link="new-bogie_motor-mout-coupler" />
+    </joint>
+    <joint name="new-bogie_new-bogie_Rigid-2" type="fixed">
+        <origin xyz="-0.14056660917371736 -0.009977639637440952 0.02000000000000007" rpy="1.1509651526950625e-18 -0.7126895337377013 -2.7124742660110326" />
+        <parent link="new-bogie_new-bogie" />
+        <child link="new-bogie_motor-mout-coupler" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="1.3421759348375417e-09 -3.106646744299724e-09 -0.019999998927116208" rpy="1.5707963267948972 -2.5094247372906924e-16 0.24434722919892735" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="1.3421760414189522e-09 3.1066464600826293e-09 0.024999998927116067" rpy="-1.5707963267948961 2.2318689811343954e-16 -0.24434722919892682" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="0.0 -1.0 -9.860761315262648e-32" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="1.342175863783268e-09 -3.106646531136903e-09 1.0728838617524162e-09" rpy="-1.5707963267948961 -2.509424737290692e-16 0.24434722919892735" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="8.441168830586321e-10 -3.1113283327499632e-09 -0.019999998927116566" rpy="1.5707963267948972 -2.0299952952905754e-16 1.4908785588824507" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="8.441168830586321e-10 3.1113283505135317e-09 0.024999998927116567" rpy="-1.5707963267948961 2.0299952952905761e-16 -1.490878558882451" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="0.0 -1.0 6.162975822039155e-33" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="8.441168120043585e-10 -3.111328314986395e-09 1.0728837906981426e-09" rpy="-1.5707963267948961 -2.0299952952905754e-16 1.4908785588824507" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="-3.217369410890569e-09 2.821045868017791e-09 -0.019999998927116493" rpy="1.5707963267948968 -1.0131428790925374e-15 -2.2894488325405304" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="-3.21736962405339e-09 -2.8210459390720642e-09 0.024999998927116424" rpy="-1.5707963267948966 9.57631727861287e-16 2.289448832540531" />
+        <parent link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="1.1102230246251565e-16 -1.0 3.697785493223493e-32" />
+    </joint>
+    <joint name="Rover-Wheel-Assembly-L_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="-3.2173695529991165e-09 2.821045832490654e-09 1.0728833643725011e-09" rpy="-1.5707963267948966 -1.1241651815550576e-15 -2.28944883254053" />
+        <parent link="Rover-Wheel-Assembly-L_mars-wheel1" />
+        <child link="Rover-Wheel-Assembly-L_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="2.1912441638960446e-09 4.420078880684742e-09 -0.0199999989271166" rpy="-1.5707963267948966 -1.38408918697744e-15 -0.9626715474879758" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="2.1912441638960446e-09 -4.420079058320426e-09 0.024999998927116424" rpy="1.5707963267948966 1.328578035746179e-15 0.9626715474879775" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="1.1102230246251565e-16 1.0 1.5407439555097887e-31" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="-2.191244092841771e-09 4.420078774103331e-09 0.07999999892711651" rpy="1.5707963267948966 1.317818020680268e-15 -2.1789211061018174" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="3.004080788571173e-09 3.490674771455815e-09 -0.019999998927116423" rpy="-1.5707963267948968 -2.4380347137298036e-16 -1.8033793321279148" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="3.0040808596254463e-09 -3.4906747536922466e-09 0.024999998927116424" rpy="1.5707963267948966 2.4380347137297997e-16 1.803379332127915" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="0.0 0.9999999999999999 -1.232595164407831e-32" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="-3.0040807530440363e-09 3.490674771455815e-09 0.07999999892711643" rpy="1.5707963267948966 2.438034713729794e-16 -1.338213321461879" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub_Rigid-1" type="fixed">
+        <origin xyz="4.168806171378492e-09 6.00382659143861e-10 -0.01999999892711635" rpy="-1.5707963267948966 -7.815562041696515e-17 1.2059467267277069" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rover-Wheel-Hub" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID_Revolute-2" type="continuous">
+        <origin xyz="4.168806171378492e-09 -6.003828190159765e-10 0.02499999892711635" rpy="1.5707963267948968 7.81556204169602e-17 -1.2059467267277055" />
+        <parent link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_EasyMech-Anti-Slip-Motor-Coupling-06mm-Internal-Dia-ID" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly_Rhino-Planetary-v2_Component1" />
+        <axis xyz="0.0 1.0 0.0" />
+    </joint>
+    <joint name="Rover-wheel-Assembly_mars-wheel1_Rigid-1" type="fixed">
+        <origin xyz="-4.168806100324219e-09 6.003826769074295e-10 0.07999999892711648" rpy="1.5707963267948968 -3.1833510168476026e-17 1.9356459268620874" />
+        <parent link="Rover-wheel-Assembly_mars-wheel1" />
+        <child link="Rover-wheel-Assembly_Rover-Wheel-Hub-Assembly" />
+    </joint>
+</robot>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="wheel"
+               params="name parent xyz rpy">
+
+    <link name="${name}">
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="1.25"/>
+
+        <inertia
+          ixx="0.002753"
+          ixy="7.82e-10"
+          ixz="7.70e-10"
+          iyy="0.002753"
+          iyz="-1.09e-10"
+          izz="0.004233"/>
+      </inertial>
+
+      <visual>
+
+        <origin xyz="0 0 0"
+                rpy="0 0 0"/>
+
+        <geometry>
+
+          <mesh
+            filename="package://my_rover_description/meshes/visual/right_front_wheel.stl"
+            scale="${mesh_scale}"/>
+
+        </geometry>
+
+       <material name="gray">
+  <color rgba="0.5 0.5 0.5 1.0"/>
+</material>
+
+      </visual>
+
+      <collision>
+
+        <origin xyz="0 0 0"
+                rpy="0 0 0"/>
+
+        <geometry>
+
+          <mesh
+            filename="package://my_rover_description/meshes/visual/right_front_wheel.stl"
+            scale="${mesh_scale}"/>
+
+        </geometry>
+
+      </collision>
+
+    </link>
+
+    <joint name="${name}_joint"
+           type="continuous">
+
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+
+      <origin xyz="${xyz}" rpy="${rpy}"/>
+
+      <axis xyz="0 0 1"/>
+
+      <dynamics
+        damping="0.05"
+        friction="0.01"/>
+
+    </joint>
+
+  </xacro:macro>
+
+</robot>
