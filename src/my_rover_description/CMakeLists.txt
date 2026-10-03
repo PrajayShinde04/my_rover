@@ -29,6 +29,7 @@ install(
     launch
     config
     rviz
+    worlds
 DESTINATION
     share/${PROJECT_NAME}
 )

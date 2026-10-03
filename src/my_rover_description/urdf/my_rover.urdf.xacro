@@ -110,9 +110,113 @@
         xyz="0.157949245 0.025 -0.100411217"
         rpy="0 0 0"/>
 
+  <!-- Simulated LiDAR -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.04" length="0.05"/>
+      </geometry>
+    </visual>
 
+    <collision>
+      <geometry>
+        <cylinder radius="0.04" length="0.05"/>
+      </geometry>
+    </collision>
 
-    
+    <inertial>
+      <mass value="0.1"/>
+      <inertia
+        ixx="0.0001"
+        ixy="0.0"
+        ixz="0.0"
+        iyy="0.0001"
+        iyz="0.0"
+        izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 0.30" rpy="0 0 0"/>
+  </joint>
+    <gazebo reference="lidar_link">
+    <sensor name="lidar" type="gpu_lidar">
+  <topic>/scan</topic>
+  <update_rate>10</update_rate>
+
+  <ray>
+    <scan>
+      <horizontal>
+        <samples>360</samples>
+        <resolution>1</resolution>
+        <min_angle>-3.14159</min_angle>
+        <max_angle>3.14159</max_angle>
+      </horizontal>
+    </scan>
+
+    <range>
+      <min>0.12</min>
+      <max>12.0</max>
+      <resolution>0.01</resolution>
+    </range>
+  </ray>
+
+  <always_on>true</always_on>
+  <visualize>true</visualize>
+</sensor>
+  </gazebo>
+
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <joint name="left_front_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="left_middle_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="left_rear_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_front_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_middle_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_rear_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+  
+    <gazebo>
+    <plugin
+      filename="gz_ros2_control-system"
+      name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find my_rover_description)/config/ros2_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
 
     
 
