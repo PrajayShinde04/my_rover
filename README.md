@@ -1,0 +1,1 @@
+this is repository of my autonomous mobile rover project which is made up of 6 wheel rocker boggy system and currently utilizing differential drive mechanism . this consists some real world teleoperation and simulation videos also , currently the project is in progress ill update it as soon as possible
